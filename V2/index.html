@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<body>
-<div class="container">
-    <h1>Currency Converter</h1>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
 
       <div class="result">
         <p>Conversion Rate: <span id="conversionRate"></span></p>
-    </div>
-     
+      </div>
 
-    <div class="converter">
-         <div id="date"></div>
+      <div class="converter">
+        <div id="date"></div>
 
-         <div id="currency">
-        <label for="baseCurrency">From:</label>
-        <input type="number" id="amount" placeholder="Enter amount" value='1'>
-        <select id="baseCurrency"></select>
+        <div id="currency">
+          <label for="baseCurrency">From:</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount"
+            value="1"
+          />
+          <select id="baseCurrency"></select>
         </div>
         <button id="swapBtn">&#8646;</button>
 
-
         <div id="currency">
-        <label for="targetCurrency">To:</label>
-        <span id="convertedAmount"></span>
-        <select id="targetCurrency"></select>
+          <label for="targetCurrency">To:</label>
+          <span id="convertedAmount"></span>
+          <select id="targetCurrency"></select>
         </div>
-      
-        <button id="convertBtn">Convert</button>
-        
-    </div>
-  
-    <p id="error" class="error"></p>
-    <div class="loading" id="loading"></div>
-</div>
 
-<script src="script.js"></script>
-</body>
+        <button id="convertBtn">Convert</button>
+      </div>
+
+      <p id="error" class="error"></p>
+      <div class="loading" id="loading"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
